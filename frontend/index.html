@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPI QR Payment</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Generate UPI QR Code</h1>
+        <form id="paymentForm">
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" required>
+            <label for="payerEmail">Payer Email:</label>
+            <input type="email" id="payerEmail" required>
+            <button type="submit">Generate QR</button>
+        </form>
+        <div id="qrCodeDisplay" class="qr-code-display">
+            <!-- QR code will be displayed here -->
+        </div>
+        <p id="transactionIdDisplay"></p>
+        <p><a href="history.html">View Transaction History</a></p>
+    </div>
+    <script src="js/qr.js"></script>
+</body>
+</html>

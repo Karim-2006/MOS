@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const payerEmail = document.getElementById('payerEmail').value;
 
             try {
-                const response = await fetch(`http://localhost:7658/api/qr/generate-qr`, {
+                const response = await fetch(`https://mos-h2ev.onrender.com/api/qr/generate-qr`, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',

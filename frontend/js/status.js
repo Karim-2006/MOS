@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     async function pollPaymentStatus(id) {
         const interval = setInterval(async () => {
             try {
-                const response = await fetch(`http://localhost:7658/api/transaction/${id}`);
+                const response = await fetch(`https://mos-h2ev.onrender.com/api/transaction/${id}`);
                 const data = await response.json();
 
                 if (response.ok) {

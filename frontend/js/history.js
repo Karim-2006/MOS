@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     async function fetchHistory() {
         try {
-            const response = await fetch(`http://localhost:7658/api/qr/history`);
+            const response = await fetch(`https://mos-h2ev.onrender.com/api/qr/history`);
             const data = await response.json();
 
             if (response.ok) {
